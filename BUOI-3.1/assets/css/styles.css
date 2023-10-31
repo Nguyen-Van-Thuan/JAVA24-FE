@@ -1,0 +1,79 @@
+/* 
+  Reset Browser
+  + Margin: K/c Tu phan tu nay den phan tu khac
+  + Padding: K/c Tu phan tu nay den phan tu khac
+*/
+
+* {
+  margin: 0px; 
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Dat ten theo Class */
+.title-h4-1 {
+  color: orange;
+}
+.title-h4-2 {
+  color: red;
+}
+
+/* Dat ten theo ID */
+#title-h2_1 {
+  color: violet;
+}
+#title-h2_2 {
+  color: green;
+}
+
+/* Dat ten cha con */
+h3 {
+  color: pink;
+}
+div h3 {
+  color: aqua;
+}
+
+/* 
+  + Bo chon css voi the Link 
+  + link: Ap dung cho the <a></a> chua click
+  + visited: Ap dung cho the <a></a> da click
+  */
+a:link {
+  color: black;
+}
+a:visited {
+  color: red;
+}
+
+/* Thuoc tinh css font-style */
+.para-3 {
+  font-style: italic;
+}
+
+/* 
+  Thuoc tinh css background-color 
+  + Margin: k/c tinh tu vien phan tu ra ngoai
+  + Padding: k/c tinh tu vien phan tu vao chinh no
+  */
+.box-1 {
+  background-color: green;
+  width: 300px;
+  height: 300px;
+  /* margin-top: 50px;  */
+  margin-left: 100px;
+  padding-top: 50px;
+
+  border: 5px solid red;
+  /* border: 5px dotted red; */
+
+  /* Bo vien */
+  /* border-radius: 15px; */
+  border-radius: 50%;
+}
+.box-2 {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  display: none;
+}
