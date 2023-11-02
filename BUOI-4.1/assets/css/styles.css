@@ -1,0 +1,89 @@
+/* Reset Browser */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Phan tu (Class) cha */
+.container {
+  width: 100%;
+  height: 800px;
+  background-color: pink;
+
+  /* De su dung flex-box */
+  display: flex;
+
+  /* flex-direction: Xd huong phan tu con dc sap xep*/
+  /* flex-direction: column-reverse; */
+
+  /* 
+    + Flex-wrap: Kich thuoc PT con > Man hinh 
+    -> tu dong xuong hang */
+  /* flex-wrap: wrap; */
+
+  /* 
+    + justify-content: Su dung nhieu -> Phai nho
+    + Xac dinh vi tri phan tu theo chieu ngang (ROW)
+  */
+  /* justify-content: center; */
+
+
+  /* 
+    + Su dung rat la nhieu
+    + aline-item: Xac dinh vi tri phan tu theo chieu doc
+  */
+  /* align-items: baseline; */
+
+  /* aline-content: Can chinh item tren nhieu hang */
+  /* align-content: space-evenly; */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Phan tu (Class) con */
+.box-1 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  font-size: 40px;
+  color: white;
+  /* order: 1; */
+  /* flex-grow: 1; */
+}
+.box-2 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  font-size: 40px;
+  color: white;
+  /* order: 4; */
+  /* flex-grow: 1; */
+  flex-shrink: 0;
+}
+.box-3 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  font-size: 40px;
+  color: white;
+  /* order: 3; */
+  /* flex-grow: 1; */
+}
+.box-4 {
+  width: 200px;
+  height: 200px;
+  background-color: violet;
+  font-size: 40px;
+  color: white;
+  /* order: 2; */
+}
