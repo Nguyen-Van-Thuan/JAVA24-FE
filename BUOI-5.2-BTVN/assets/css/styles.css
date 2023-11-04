@@ -1,0 +1,59 @@
+/* Reset Browser */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+  background-color: pink;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+.column {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* size column */
+
+.column-2 {
+  width: calc(100% / 2);
+}
+.column-3 {
+  width: calc(100% / 3);
+}
+.column-4 {
+  width: calc(100% / 4);
+}
+
+/* San pham hot */
+.product-hot {
+  width: 100%;
+  padding-top: 50px;
+}
+.content {
+  width: 100%;
+  height: 400px;
+  background-color: black;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+  /* margin: 
+    + margin: 0 -15px 0 -15px;
+    + top - right - bottom -left
+   */

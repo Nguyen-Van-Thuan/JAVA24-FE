@@ -1,0 +1,92 @@
+/* Reset Browser */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* STICKY */
+.top-bar {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+}
+.menu {
+  width: 100%;
+  height: 130px;
+  background-color: violet;
+
+  position: sticky;
+  top: 0;
+  z-index: 999999999;
+}
+
+
+
+
+
+
+/* Position: static - Mac dinh trinh duyet  */
+.box-1 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+
+  position: static;
+  /* top: 100px; */
+  /* 
+   top; left; right; bottom; z-index 
+   Khong su dung duoc
+  */
+}
+
+
+/* position: Relative */
+.box-2 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+
+  position: relative;
+  /* top: 100px;
+  left: 100px; */
+}
+
+/* position: absolute */
+.container {
+  width: 500px;
+  height: 800px;
+  background-color: yellow;
+  position: relative;
+}
+.box-3 {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+
+  position: absolute;
+  top: 100px;
+  z-index: 2;
+}
+
+.box-4 {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+
+  position: absolute;
+  top: 200px;
+  z-index: 1;
+}
+
+/* Postion: fixed */
+.messenger {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: 50px;
+  z-index: 99999999999;
+  right: 30px;
+}
