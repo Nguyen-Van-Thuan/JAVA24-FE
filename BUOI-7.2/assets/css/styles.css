@@ -1,0 +1,57 @@
+/* Reset Browser */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* tranform: translate(x, y) */
+.box-1 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+
+  /* transform: translate(20px, 100px); */
+  /* transform: translateX(50px); */
+  /* transform: translateY(50px); */
+}
+
+
+/* tranform: scale(x, y) */
+.box-2 {
+  width: 200px;
+  height: 200px;
+  background-color: violet;
+  margin-left: 300px;
+}
+.box-2:hover {
+
+  /* transform: scale(2, 2); */
+  /* transform: scaleX(2); */
+  /* transform: scaleY(2); */
+}
+
+/* tranform: rotate() */
+.box-3 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+
+  /* transform: rotate(60deg); */
+}
+
+
+/* Ket hop transtion & transform tao hieu ung css  */
+.box-4 {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  margin-left: 200px;
+
+  transition: width .2s, height .2s, transform .2s;
+}
+.box-4:hover {
+  width: 400px;
+  height: 400px;
+  transform: rotate(180deg);
+}

@@ -1,3 +1,167 @@
-h1 {
-  color: red;
+/* Reset Browser */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1250px;
+  margin: auto;
+}
+
+/* Header-Top */
+.header-top {
+  width: 100%;
+  background-color: #fff;
+}
+.wrap-header-top {
+  display: flex;
+}
+
+.header-top-left {
+  width: 20%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.header-top-left img {
+  width: 200px;
+  object-fit: cover;
+}
+
+.header-top-center {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+.header-top-center input {
+  width: calc(100% - 40px);
+  height: 35px;
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  padding: 0 20px;
+
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  /* Bo vien click vao input */
+  outline: none; 
+}
+.header-top-center button {
+  width: 40px;
+  height: 35px;
+  background-color: #594a4e;
+  border: none;
+
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.header-top-center button i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.header-top-right {
+  width: 30%;
+  height: 80px;
+}
+.header-top-right ul {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-top-right ul li {
+  list-style: none;
+  position: relative; /* Mat Troi */
+}
+.header-top-right ul .wrap-contact {
+  display: flex;
+  align-items: center;
+}
+.header-top-right ul .wrap-contact i {
+  font-size: 20px;
+  margin: 0 10px;
+}
+.header-top-right ul .wrap-contact a {
+  /* Bo gach chan the a */
+  text-decoration: none;
+  color: #111;
+  font-weight: 600; /* Dam */
+}
+.header-top-right ul li i {
+  font-size: 20px;
+}
+/* Di chuot qua phan tu ... */
+.header-top-right ul li i:hover {
+  color: blue;
+  cursor: pointer; /* Ban tay */
+}
+.header-top-right ul li span {
+  position: absolute;
+  top: -17px;
+  right: -15px;
+  width: 20px;
+  height: 20px;
+  background-color: #594a4e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 13px;
+}
+
+/* Header-Bottom./Start */
+.header-bottom {
+  width: 100%;
+  height: 46px;
+  background-color: #594a4e;
+}
+.wrap-header-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.header-bottom-left {
+  display: flex;
+  align-items: center;
+  height: 46px;
+}
+.header-bottom-left i {
+  font-size: 19px;
+  color: #fff;
+  margin-right: 10px;
+}
+.header-bottom-left p {
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase; /* Viet Hoa */
+}
+.header-bottom-center ul {
+  display: flex;
+  align-items: center;
+  height: 46px;
+}
+.header-bottom-center ul li {
+  list-style: none;
+}
+.header-bottom-center ul li a {
+  padding: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize; 
+  /* Viet hoa chu cai dau tien moi tien moi tu*/
+}
+
+.header-bottom-right {
+  /* text-align: center; Can chu ra giua TP cha */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-bottom-right p {
+  color: #fff;
 }
