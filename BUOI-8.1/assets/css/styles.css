@@ -1,0 +1,41 @@
+/* Reset Browser */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Loading CSS */
+.loading {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 6px solid green;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  margin: auto;
+  /* 
+    + De su dung 
+    + animation: cu phap
+    + animation-name: Ten animation 
+    + animation-duration: thoi gian chuyen dong 
+    + animation-iteration-count: Cach no xoay
+    + animation-timing-function: Quy dinh cach no chuyen dong nhu the nao
+  */
+  animation: spinner 2s infinite linear;
+}
+/* Cu phap khai bao animtaion */
+@keyframes spinner {
+
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 
+  from: Tu dau
+  to: den dau
+*/
