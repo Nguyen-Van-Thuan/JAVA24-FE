@@ -19,23 +19,111 @@
     + animation: cu phap
     + animation-name: Ten animation 
     + animation-duration: thoi gian chuyen dong 
+    + animation-delay: tri hoan
     + animation-iteration-count: Cach no xoay
+    + animation-direction: huong chay
     + animation-timing-function: Quy dinh cach no chuyen dong nhu the nao
+    + animation-fill-mode: xac dinh cho minh trang thai cuoi cung cua animation
   */
-  animation: spinner 2s infinite linear;
+
+  animation: spinner 0.8s infinite linear;
+  /* animation: spinner .8s 3 linear backwards; */
+  /* transform: rotate(45deg); */
+
 }
 /* Cu phap khai bao animtaion */
 @keyframes spinner {
 
-  from {
-    transform: rotate(0deg);
+  /* from {
+    transform: rotate(0);
   }
   to {
     transform: rotate(360deg);
+  } */
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    border-color: blue;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+  /* from: Tu dau ==== to: den dau*/
+}
+
+
+/* Heart */
+.heart {
+  width: 80px;
+  margin: auto;
+  position: relative; /* Tuyet doi -> Di theo*/
+
+
+  animation: heart-red .2s infinite linear ;
+}
+.heart div {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+}
+.heart div:nth-child(1) {
+  position: absolute;
+  top: 0;
+  transform: rotate(45deg);
+  border-radius: 50% 0 0 50% ; /* top - right - bottom - left*/
+}
+.heart div:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  transform: rotate(45deg);
+  border-radius: 50% 50% 0 0;
+
+}
+.heart div:nth-child(3) {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transform: rotate(45deg);
+}
+/* Khai bao animation */
+@keyframes heart-red {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2);
   }
 }
 
-/* 
-  from: Tu dau
-  to: den dau
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Cach 1 */
+/* .heart div:nth-child(3) {
+  background-color: blue;
+} */
+
+/* Cach 2 */
+/* .heart div:first-child {
+   PT dau tien
+  background-color: red;
+} */
+/* .heart div:last-child {
+  background-color: red;
+} */
+
+
+

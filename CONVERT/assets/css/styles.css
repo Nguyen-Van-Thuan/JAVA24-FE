@@ -149,15 +149,21 @@
 }
 .header-bottom-center ul li {
   list-style: none;
+  margin: 0 12px;
+  position: relative; 
+  /* Mat troi : tuyet doi*/
+  padding: 13px 0;
 }
 .header-bottom-center ul li a {
-  padding: 0 10px;
   color: #fff;
   text-decoration: none;
   text-transform: capitalize; 
-  /* Viet hoa chu cai dau tien moi tien moi tu*/
+  font-size: 14px;
 }
-
+.header-bottom-center ul li i {
+  color: #fff;
+  font-size: 12px;
+}
 .header-bottom-right {
   /* text-align: center; Can chu ra giua TP cha */
   display: flex;
@@ -167,4 +173,75 @@
 }
 .header-bottom-right p {
   color: #fff;
+}
+
+/* sub-menu-c1 */
+.header-bottom-center ul li .sub-menu-c1 {
+  position: absolute;
+  top: 100%;
+  background: #fff;
+  display: none;
+  /* display: block; */
+  width: 200px;
+  height: auto;
+  z-index: 999999999;
+  padding: 10px 0;
+  border-radius: 4px;
+}
+.header-bottom-center ul li:hover .sub-menu-c1 {
+  display: block;
+}
+
+.header-bottom-center ul li .sub-menu-c1 li {
+  padding: 5px 10px;
+  position: relative; /*Tuyet doi*/
+}
+.header-bottom-center ul li .sub-menu-c1 li a {
+  color: black;
+}
+.header-bottom-center ul li .sub-menu-c1 li:hover .sub-menu-c2{
+  display: block;
+}
+
+.sub-menu-c1 li .sub-menu-c2 {
+  position: absolute; /* Tuong doi */
+  top: 0;
+  background-color: #fff;
+  width: 200px;
+  left: 100%;
+  display: none;
+  height: auto;
+}
+/* Slider */
+.slider-main .owl-nav button span {
+  color: red;
+}
+/* Code man hinh PC, MAY CHIEU */
+/* Responsive */
+/* @media screen and (min-width: 768px) and (max-width: 1000px){
+  
+}
+@media screen and (min-width: 1000px) and (max-width: 1500px){
+  
+} */
+/* desktop */
+@media screen and (max-width: 1200px){
+  body {
+    background-color: red;
+  }
+  .header-bottom-center ul li {
+    margin: 0 5px;
+  }
+}
+/* tablet */
+@media screen  and (max-width: 768PX){
+  .header-bottom-center {
+    display: none;
+  }
+}
+
+/* Mobile */
+/* tablet */
+@media screen  and (max-width: 414px){
+  
 }
